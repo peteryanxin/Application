@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/x100"
+			android:background="@color/lightgray">
+
+		<TextView
+				android:id="@+id/title_bart_tv_left"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:text="返回"
+				android:drawablePadding="@dimen/x6"
+				android:textColor="@color/colorBlack"
+				android:layout_marginLeft="@dimen/x20"
+				android:textStyle="bold"
+				android:textSize="@dimen/bigOneSize"/>
+
+		<TextView
+				android:id="@+id/title_bart_tv_middle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_marginLeft="@dimen/x20"
+				android:text=""
+				android:textColor="@color/colorBlack"
+				android:textSize="@dimen/bigTwoSize"
+				android:textStyle="bold"/>
+
+		<TextView
+				android:textSize="@dimen/sp18"
+				android:textStyle="bold"
+				android:textColor="@color/colorBlack"
+				android:id="@+id/title_bart_tv_right"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="@dimen/x20"
+				android:layout_centerVertical="true"
+				android:text="下一个"/>
+
+	</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

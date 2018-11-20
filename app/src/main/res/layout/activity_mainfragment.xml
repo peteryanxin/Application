@@ -1,44 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+		>
 
-    <FrameLayout
-        android:visibility="visible"
-        android:id="@+id/basecontainer"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp0"
-        android:layout_weight="1" />
+	<FrameLayout
+			android:visibility="visible"
+			android:id="@+id/basecontainer"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp0"
+			android:layout_weight="1"/>
 
-    <RadioGroup
-        android:visibility="visible"
-        android:id="@+id/rgParent"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
+	<RadioGroup
+			android:gravity="center_vertical"
+			android:background="@color/lightgray"
+			android:visibility="visible"
+			android:id="@+id/rgParent"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
 
-        <RadioButton
-            style="@style/RadioButtonStyle"
-            android:text="@string/main"
-             />
-        <RadioButton
-            style="@style/RadioButtonStyle"
-            android:text="@string/page"
-            />
-        <RadioButton
-            style="@style/RadioButtonStyle"
-            android:text="@string/profile"
-            />
-    </RadioGroup>
-    <TextView
-            android:visibility="gone"
-        android:textSize="20sp"
-        android:textColor="#F00"
-        android:text="fafafafaf"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+		<RadioButton
+				android:drawableTop="@drawable/main_selector"
+				style="@style/RadioButtonStyle"
+				android:text="@string/main"
+				/>
+
+		<RadioButton
+				android:drawableTop="@drawable/page_selector"
+				style="@style/RadioButtonStyle"
+				android:text="@string/page"
+				/>
+		<!--<RadioButton
+				android:drawableTop="@drawable/settings_selector"
+				style="@style/RadioButtonStyle"
+				android:text="@string/profile"
+				/>-->
+	</RadioGroup>
+
+	<TextView
+			android:visibility="gone"
+			android:textSize="20sp"
+			android:textColor="#F00"
+			android:text="fafafafaf"
+			android:gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
 
 </LinearLayout>

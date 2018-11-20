@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.example.administrator.myapplication">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.administrator.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"
-                     tools:ignore="ProtectedPermissions"/>
-    <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme"
-            tools:ignore="GoogleAppIndexingWarning"
-            >
-        <activity android:name="com.example.administrator.myapplication.Modle.activits.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission
+			android:name="android.permission.BLUETOOTH_PRIVILEGED"
+			tools:ignore="ProtectedPermissions"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+	<application
+			android:allowBackup="true"
+			android:icon="@mipmap/ic_launcher"
+			android:label="@string/app_name"
+			android:roundIcon="@mipmap/ic_launcher_round"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme"
+			tools:ignore="GoogleAppIndexingWarning"
+			>
+		<activity android:name="com.example.administrator.myapplication.Modle.activits.MainActivity"
+				android:launchMode="singleTask"
+				>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
 
-        <activity android:name=".Modle.activits.Sample"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
 
-        <service android:name=".Modle.services.LocalService"/>
-        <service android:name=".Modle.services.RemoteSerice"/>
+		</activity>
 
-        <receiver android:name=".Modle.receiver.LocalReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.SCREEN_OFF"/>
-                <action android:name="android.intent.action.SCREEN_ON"/>
-            </intent-filter>
-        </receiver>
-    </application>
+		<activity android:name=".Modle.activits.Sample"/>
+		<activity android:name=".Modle.activits.HttpActivity">
+
+		</activity>
+		<activity android:name=".Modle.activits.DataEncryptionAcvitiy">
+
+		</activity>
+
+		<service android:name=".Modle.services.LocalService"/>
+		<service android:name=".Modle.services.RemoteSerice"/>
+
+		<receiver android:name=".Modle.receiver.LocalReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.SCREEN_OFF"/>
+				<action android:name="android.intent.action.SCREEN_ON"/>
+			</intent-filter>
+		</receiver>
+	</application>
 
 </manifest>

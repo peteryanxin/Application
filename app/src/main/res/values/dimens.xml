@@ -5,4 +5,9 @@
     <dimen name="sp18">18sp</dimen>
     <dimen name="dp10">10dp</dimen>
 	<dimen name="dp5">5dp</dimen>
+	<dimen name="bigTwoSize">19sp</dimen>
+	<dimen name="x20">20dp</dimen>
+	<dimen name="x6">6dp</dimen>
+	<dimen name="bigOneSize">18sp</dimen>
+	<dimen name="x100">50dp</dimen>
 </resources>

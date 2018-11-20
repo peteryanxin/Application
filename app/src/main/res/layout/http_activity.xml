@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		android:padding="@dimen/dp10"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+	 <LinearLayout
+			 android:orientation="horizontal"
+			 android:layout_width="match_parent"
+			 android:layout_height="@dimen/dp50">
+
+		 <Button
+				 android:onClick="get"
+				 android:text="get"
+				 android:layout_weight="1"
+				 android:layout_width="0dp"
+				 android:layout_height="match_parent"/>
+		 <Button
+				 android:onClick="post"
+				 android:text="post"
+				 android:layout_weight="1"
+				 android:layout_width="0dp"
+				 android:layout_height="match_parent"/>
+
+	 </LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp50">
+
+		<Button
+				android:onClick="loadimg"
+				android:text="loadimg"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"/>
+		<Button
+				android:onClick="upload"
+				android:text="upload"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"/>
+
+	</LinearLayout>
+
+	<ScrollView
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="0dp">
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			<TextView
+					android:id="@+id/tvtext"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"/>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>
